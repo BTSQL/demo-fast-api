@@ -3,7 +3,7 @@ from pydantic import BaseModel, EmailStr
 from typing import Optional
 
 
-class RequestEmailSch(BaseModel) :
+class EmailSendRequestSch(BaseModel):
     user_email : EmailStr
     title : str
     content : Optional[str]
