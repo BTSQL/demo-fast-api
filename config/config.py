@@ -12,6 +12,7 @@ class Settings :
     config_secret_common = json.loads(open(CONFIG_SECRET_COMMON_FILE).read())
 
     EMAIL_API_KEY: str = config_secret_common["email_api_key"]
-
+    OPENAI_HEADERS = config_secret_common["openai_header"]
+    BARD_API_KEY: str = config_secret_common["bard_api_key"]
     
 settings = Settings()
