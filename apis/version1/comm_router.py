@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from schemas.comm_sch import EmailSendRequestSch
-from apis.utils.utils import send_email
+from utils.utils import send_email
 
 router = APIRouter()
 
